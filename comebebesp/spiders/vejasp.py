@@ -1,11 +1,13 @@
 # -*- coding: utf-8 -*-
 from urlparse import urljoin
+
 import scrapy
+from scrapy.contrib.loader.processor import Identity
 
 from comebebesp.items import ComebebespItemLoader
 
 class VejaspItemLoader(ComebebespItemLoader):
-    pass
+    telephone_out = Identity()
 
 
 class VejaspSpider(scrapy.Spider):
@@ -37,9 +39,6 @@ class VejaspSpider(scrapy.Spider):
                              '{xpath}/following-sibling::text()'.format(
                                  xpath=establishment._css2xpath(
                                      '[data-filtered-search-filter="bairro"]')))
-            loader.add_xpath('telephone',
-                             '{xpath}/following-sibling::text()'.format(
-                                 xpath=establishment._css2xpath('.label')))
             loader.add_css('category',
                            ('[data-filtered-search-filter="especialidades"]'
                             '::text'))
@@ -50,8 +49,13 @@ class VejaspSpider(scrapy.Spider):
 
         if establishments:
             next_page = response.meta['page'] + 1
-            yield scrapy.Request(self.url_template.format(page=next_page), meta={'page': next_page})
+            yield scrapy.Request(self.url_template.format(page=next_page),
+                                 meta={'page': next_page})
 
     def parse_item(self, response):
-        return response.meta['item']
+        loader = VejaspItemLoader(item=response.meta['item'],
+                                  response=response)
+        loader.add_css('telephone', '.tel-number-protocol::text')
+        loader.add_css('website', '.website a::attr("href")')
+        return loader.load_item()
 
