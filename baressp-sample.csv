@@ -1,10 +1,10 @@
-category,city,neighborhood,name,telephone,website,address
-Pubs,São Paulo,,Gillan's inn English Rock,(11) 3129-8103,http://www.gillansinn.com.br,"Rua Marquês De Itu, 284 - Vila Buarque"
-Pubs,São Paulo,,The Sailor Legendary Pub,(11) 3811-9793,http://www.thesailor.com.br,"Avenida Brigadeiro Faria Lima, 2776 - Jardim Europa"
-Pubs,São Paulo,,The Pub SP,(11) 3804-3894,www.thepubaugusta.com.br,"Rua Augusta, 576 - Consolação"
-Pubs,Guarulhos,,The Lord Black Irish Pub,(11) 2408-8494,http://www.thelordblack.com.br/index.html,"Avenida Tiradentes, 173 - Centro"
-Pubs,São Paulo,,The Blue Pub,(11) 2609-8233,http://www.thebluepub.com.br,"Alameda Ribeirão Preto, 384 - Jardins"
-Pubs,São Paulo,,St. John´s Irish Pub,(11) 2295-0677,http://www.stjohns.com.br,"Rua Itapura, 1308 - Tatuapé"
-Pubs,São Paulo,,O Malley s,(11) 3086-0780,http://www.omalleysbar.net,"Alameda Itu, 1529 - Jardim Paulista"
-Bar,São Paulo,,Melograno Forneria & Empório de Cerveja,(11) 3031-2921,http://www.melograno.com.br/,"Rua Aspicuelta, 436 - Vila Madalena"
-Pubs,São Paulo,,Jet Lag Pub,(11) 3083-7075,http://www.jetlagpub.com.br,"Rua Da Consolação, 3032 - Jd Paulista"
+category,city,neighborhood,name,twitter,telephone,website,facebook,address,email
+Pubs,São Paulo,,Gillan's inn English Rock,h,"(11) 3129-8103,(11) 3129-8710",http://www.gillansinn.com.br,h,"Rua Marquês De Itu, 284 - Vila Buarque","aniversario@gillansinn.com.br,gillansinn@gillansinn.com.br"
+Pubs,São Paulo,,The Sailor Legendary Pub,h,"(11) 3811-9793,(11) 3044-4032",http://www.thesailor.com.br,h,"Avenida Brigadeiro Faria Lima, 2776 - Jardim Europa",info@thesailor.com.br
+Pubs,São Paulo,,The Pub SP,,(11) 3804-3894,www.thepubaugusta.com.br,h,"Rua Augusta, 576 - Consolação",
+Pubs,Guarulhos,,The Lord Black Irish Pub,,"(11) 2408-8494,(11) 2229-6249",http://www.thelordblack.com.br/index.html,h,"Avenida Tiradentes, 173 - Centro",contato@thelordblack.com.br
+Pubs,São Paulo,,The Blue Pub,h,"(11) 2609-8233,(11) 3284-8338",http://www.thebluepub.com.br,h,"Alameda Ribeirão Preto, 384 - Jardins",bluepub@bluepub.com.br
+Pubs,São Paulo,,St. John´s Irish Pub,h,(11) 2295-0677,http://www.stjohns.com.br,h,"Rua Itapura, 1308 - Tatuapé","atendimento@stjohns.com.br,stjohns@stjohns.com.br"
+Pubs,São Paulo,,O Malley s,h,(11) 3086-0780,http://www.omalleysbar.net,h,"Alameda Itu, 1529 - Jardim Paulista",party@omalleysbar.net
+Bar,São Paulo,,Melograno Forneria & Empório de Cerveja,h,(11) 3031-2921,http://www.melograno.com.br/,h,"Rua Aspicuelta, 436 - Vila Madalena","contato@melograno.com.br,melograno@melograno.com.br"
+Pubs,São Paulo,,Jet Lag Pub,,"(11) 3083-7075,(11) 5103-1400",http://www.jetlagpub.com.br,h,"Rua Da Consolação, 3032 - Jd Paulista",info@jetlagpub.com.br

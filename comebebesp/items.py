@@ -12,6 +12,9 @@ class ComebebespItem(scrapy.Item):
     city = scrapy.Field()
     telephone = scrapy.Field()
     website = scrapy.Field()
+    email = scrapy.Field()
+    twitter = scrapy.Field()
+    facebook = scrapy.Field()
     category = scrapy.Field()
 
 
