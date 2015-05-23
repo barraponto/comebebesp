@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 import scrapy
-from scrapy.contrib.loader import ItemLoader
+from scrapy.loader import ItemLoader
 from scrapylib.processors import default_input_processor, default_output_processor
 
 
