@@ -26,7 +26,8 @@ class BaresspSpider(CrawlSpider):
     name = 'baressp'
     allowed_domains = ['baressp.com.br']
     start_urls = [
-        'http://www.baressp.com.br/bares/pesquisa/?FC=1'
+        'http://www.baressp.com.br/bares/pesquisa/?FC=1',
+        'http://www.baressp.com.br/bares/pesquisa/?FC=2'
     ]
 
     rules = (
