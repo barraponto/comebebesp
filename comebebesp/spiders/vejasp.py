@@ -2,12 +2,19 @@
 from urlparse import urljoin
 
 import scrapy
-from scrapy.contrib.loader.processor import Identity
+from scrapy.contrib.loader.processor import Identity, Compose, TakeFirst
 
 from comebebesp.items import ComebebespItemLoader
 
+def cleanup_city(city):
+    if city.startswith('/ '):
+        return city[2:]
+    else:
+        return city
+
 class VejaspItemLoader(ComebebespItemLoader):
     telephone_out = Identity()
+    city_out = Compose(TakeFirst(), cleanup_city)
 
 
 class VejaspSpider(scrapy.Spider):

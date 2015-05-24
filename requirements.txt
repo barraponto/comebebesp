@@ -1,2 +1,3 @@
 Scrapy==1.0.0rc1
 scrapylib==1.5.0
+purl==1.1
